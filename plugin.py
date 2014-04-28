@@ -1,4 +1,4 @@
-#Embedded file name: /usr/lib/enigma2/python/Plugins/Extensions/1channel/plugin.py
+#Embedded file name: /usr/lib/enigma2/python/Plugins/Extensions/enigma2-primewire/plugin.py
 from Plugins.Plugin import PluginDescriptor
 from Screens.Screen import Screen
 from Screens.InfoBar import MoviePlayer as MP_parent
@@ -30,7 +30,7 @@ from urllib2 import HTTPError
 class ShowHelp(Screen):
     wsize = getDesktop(0).size().width() - 200
     hsize = getDesktop(0).size().height() - 300
-    skin = '\n        <screen position="100,150" size="' + str(wsize) + ',' + str(hsize) + '" title="1channel" >\n        <widget name="myLabel" position="10,10" size="' + str(wsize - 20) + ',' + str(hsize - 20) + '" font="Console;18" />\n        </screen>'
+    skin = '\n        <screen position="100,150" size="' + str(wsize) + ',' + str(hsize) + '" title="PrimeWire" >\n        <widget name="myLabel" position="10,10" size="' + str(wsize - 20) + ',' + str(hsize - 20) + '" font="Console;18" />\n        </screen>'
 
     def __init__(self, session, args = None):
         self.session = session
@@ -46,7 +46,7 @@ class ShowHelp(Screen):
 class MyMenux(Screen):
     wsize = getDesktop(0).size().width() - 200
     hsize = getDesktop(0).size().height() - 300
-    skin = '\n        <screen position="100,150" size="' + str(wsize) + ',' + str(hsize) + '" title="1channel" >\n        <widget name="myMenu" position="10,10" size="' + str(wsize - 20) + ',' + str(hsize - 20) + '" scrollbarMode="showOnDemand" />\n        </screen>'
+    skin = '\n        <screen position="100,150" size="' + str(wsize) + ',' + str(hsize) + '" title="PrimeWire" >\n        <widget name="myMenu" position="10,10" size="' + str(wsize - 20) + ',' + str(hsize - 20) + '" scrollbarMode="showOnDemand" />\n        </screen>'
 
     def __init__(self, session, action, value):
         self.session = session
@@ -226,7 +226,7 @@ class MyMenux(Screen):
 class MyMenu2(Screen):
     wsize = getDesktop(0).size().width() - 200
     hsize = getDesktop(0).size().height() - 300
-    skin = '\n        <screen position="100,150" size="' + str(wsize) + ',' + str(hsize) + '" title="1channel" >\n        <widget name="myMenu" position="10,10" size="' + str(wsize - 20) + ',' + str(hsize - 20) + '" scrollbarMode="showOnDemand" />\n        </screen>'
+    skin = '\n        <screen position="100,150" size="' + str(wsize) + ',' + str(hsize) + '" title="PrimeWire" >\n        <widget name="myMenu" position="10,10" size="' + str(wsize - 20) + ',' + str(hsize - 20) + '" scrollbarMode="showOnDemand" />\n        </screen>'
 
     def __init__(self, session, action, value):
         self.session = session
@@ -834,7 +834,7 @@ class MovieList(Screen):
 class TvEpisode(Screen):
     wsize = getDesktop(0).size().width() - 200
     hsize = getDesktop(0).size().height() - 300
-    skin = '\n        <screen position="100,150" size="' + str(wsize) + ',' + str(hsize) + '" title="1channel" >\n        <widget name="myMenu" position="10,10" size="' + str(wsize - 20) + ',' + str(hsize - 20) + '" scrollbarMode="showOnDemand" />\n        </screen>'
+    skin = '\n        <screen position="100,150" size="' + str(wsize) + ',' + str(hsize) + '" title="PrimeWire" >\n        <widget name="myMenu" position="10,10" size="' + str(wsize - 20) + ',' + str(hsize - 20) + '" scrollbarMode="showOnDemand" />\n        </screen>'
 
     def __init__(self, session, action, value):
         self.session = session
@@ -890,7 +890,7 @@ class TvEpisode(Screen):
 class MovieSource(Screen):
     wsize = getDesktop(0).size().width() - 200
     hsize = getDesktop(0).size().height() - 300
-    skin = '\n        <screen position="100,150" size="' + str(wsize) + ',' + str(hsize) + '" title="1channel" >\n        <widget name="myMenu" position="10,10" size="' + str(wsize - 20) + ',' + str(hsize - 20) + '" scrollbarMode="showOnDemand" />\n        </screen>'
+    skin = '\n        <screen position="100,150" size="' + str(wsize) + ',' + str(hsize) + '" title="PrimeWire" >\n        <widget name="myMenu" position="10,10" size="' + str(wsize - 20) + ',' + str(hsize - 20) + '" scrollbarMode="showOnDemand" />\n        </screen>'
 
     def __init__(self, session, action, value):
         self.session = session
