@@ -35,7 +35,7 @@ class ShowHelp(Screen):
     def __init__(self, session, args = None):
         self.session = session
         Screen.__init__(self, session)
-        text = '\nAbout:\n\nPlugin updated 7/6/13 - added extra features'
+        text = '\nAbout:\n\nPlugin modified by oRiCLe 24/04/2014'
         self['myLabel'] = ScrollLabel(text)
         self['myActionMap'] = ActionMap(['WizardActions', 'SetupActions', 'ColorActions'], {'cancel': self.close,
          'down': self['myLabel'].pageDown,
@@ -1292,4 +1292,4 @@ class MoviePlayer(MP_parent):
 
 
 def Plugins(**kwargs):
-    return PluginDescriptor(description='1channel', fnc=main, icon='./icon.png', name='1channel', where=[PluginDescriptor.WHERE_EXTENSIONSMENU, PluginDescriptor.WHERE_PLUGINMENU])
+    return PluginDescriptor(description='PrimeWire', fnc=main, icon='./icon.png', name='PrimeWire', where=[PluginDescriptor.WHERE_EXTENSIONSMENU, PluginDescriptor.WHERE_PLUGINMENU])
